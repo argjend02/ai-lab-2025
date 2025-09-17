@@ -16,19 +16,55 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\bibstyle{plain}
-\bibdata{refs}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Software \& Hardware Environment}{1}{section.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Software and Hardware}{1}{section.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Local Search: N-Queens}{1}{section.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Problem Setup \& Representation}{1}{subsection.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Heuristics \& Neighbor Functions}{1}{subsection.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Protocol (restarts, limits), Timing}{1}{subsection.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Results (N=6,8,10,12) with figures}{1}{subsection.2.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Discussion (intermediate steps for N=6)}{1}{subsection.2.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Learning: Classification on IRIS}{1}{section.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data \& Splits (train/test same for all models)}{1}{subsection.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Models: k-NN, Decision Tree, Neural Network (topology)}{1}{subsection.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Feature Reduction Experiments}{1}{subsection.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Metrics, Confusion Matrices, Comparison Table}{1}{subsection.3.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Discussion}{1}{subsection.3.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions \& Limitations}{1}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Problem, Representation, and Cost}{1}{subsection.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Heuristics}{1}{subsection.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Experimental Protocol}{1}{subsection.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Qualitative Trajectory (N=6)}{2}{subsection.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces N=6 snapshots (Min-Conflicts shown). Early moves reduce row/diagonal clashes as queens relocate to less contested rows.\relax }}{2}{figure.caption.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Final Solutions (N=8,10,12)}{2}{subsection.2.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Representative final boards for N=8.\relax }}{2}{figure.caption.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Representative final boards for N=10.\relax }}{3}{figure.caption.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Representative final boards for N=12.\relax }}{3}{figure.caption.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Quantitative Results}{4}{subsection.2.6}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Success rate (\%), mean steps, and mean time (s).\relax }}{4}{table.caption.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7}Implementation Details}{4}{subsection.2.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8}Threats to Validity}{4}{subsection.2.8}}
+\newlabel{lst:conflicts}{{1}{4}{Number of attacking pairs}{lstlisting.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}Number of attacking pairs}{4}{lstlisting.1}}
+\@writefile{toc}{\contentsline {paragraph}{Conflict (cost) function.}{4}{lstlisting.1}}
+\newlabel{lst:minc-step}{{2}{4}{Min-Conflicts local repair step}{lstlisting.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}Min-Conflicts local repair step}{4}{lstlisting.2}}
+\@writefile{toc}{\contentsline {paragraph}{Min-Conflicts step (choose conflicted column, move to best row).}{4}{lstlisting.2}}
+\newlabel{lst:anneal-accept}{{3}{4}{Annealing acceptance rule}{lstlisting.3}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3}Annealing acceptance rule}{4}{lstlisting.3}}
+\@writefile{toc}{\contentsline {paragraph}{Simulated annealing acceptance (occasionally accept uphill moves).}{4}{lstlisting.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.9}Discussion}{5}{subsection.2.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Learning: IRIS Classification}{5}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Setup}{5}{subsection.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Models and Training Details}{5}{subsection.3.2}}
+\newlabel{lst:iris-loader}{{4}{5}{Load IRIS from ARFF and optionally keep two petal features}{lstlisting.4}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4}Load IRIS from ARFF and optionally keep two petal features}{5}{lstlisting.4}}
+\@writefile{toc}{\contentsline {paragraph}{Data loader (ARFF).}{5}{lstlisting.4}}
+\newlabel{lst:iris-split}{{5}{6}{Stratified split with cached indices for reproducibility}{lstlisting.5}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5}Stratified split with cached indices for reproducibility}{6}{lstlisting.5}}
+\@writefile{toc}{\contentsline {paragraph}{Split caching (same train and test for every model).}{6}{lstlisting.5}}
+\newlabel{lst:iris-models}{{6}{6}{Model definitions with standardization where useful}{lstlisting.6}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6}Model definitions with standardization where useful}{6}{lstlisting.6}}
+\@writefile{toc}{\contentsline {paragraph}{Models (k-NN, Decision Tree, MLP with backprop).}{6}{lstlisting.6}}
+\newlabel{lst:iris-metrics}{{7}{6}{Metrics and confusion matrix utility}{lstlisting.7}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {7}Metrics and confusion matrix utility}{6}{lstlisting.7}}
+\@writefile{toc}{\contentsline {paragraph}{Metrics and confusion matrix plotting.}{6}{lstlisting.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Confusion Matrices (2 features)}{7}{subsection.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces IRIS two-feature classification (petal length/width).\relax }}{7}{figure.caption.15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Confusion Matrices (4 features)}{7}{subsection.3.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces IRIS four-feature classification.\relax }}{7}{figure.caption.16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Quantitative Results}{7}{subsection.3.5}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces IRIS: metrics by model and feature set.\relax }}{7}{table.caption.17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}NN Topology and Discussion}{7}{subsection.3.6}}
+\bibcite{uci-iris}{1}
+\bibcite{sklearn}{2}
+\bibcite{russell-norvig}{3}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}NN Topology Sweep}{8}{subsection.3.7}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces MLP sweep: hidden units vs. metrics.\relax }}{8}{table.caption.18}}

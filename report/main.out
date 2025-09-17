@@ -1,14 +1,19 @@
-\BOOKMARK [1][-]{section.1}{Software \046 Hardware Environment}{}% 1
+\BOOKMARK [1][-]{section.1}{Software and Hardware}{}% 1
 \BOOKMARK [1][-]{section.2}{Local Search: N-Queens}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Problem Setup \046 Representation}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Heuristics \046 Neighbor Functions}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Protocol \(restarts, limits\), Timing}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Results \(N=6,8,10,12\) with figures}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.5}{Discussion \(intermediate steps for N=6\)}{section.2}% 7
-\BOOKMARK [1][-]{section.3}{Learning: Classification on IRIS}{}% 8
-\BOOKMARK [2][-]{subsection.3.1}{Data \046 Splits \(train/test same for all models\)}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.2}{Models: k-NN, Decision Tree, Neural Network \(topology\)}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.3}{Feature Reduction Experiments}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.4}{Metrics, Confusion Matrices, Comparison Table}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.5}{Discussion}{section.3}% 13
-\BOOKMARK [1][-]{section.4}{Conclusions \046 Limitations}{}% 14
+\BOOKMARK [2][-]{subsection.2.1}{Problem, Representation, and Cost}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Heuristics}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Experimental Protocol}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Qualitative Trajectory \(N=6\)}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Final Solutions \(N=8,10,12\)}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.6}{Quantitative Results}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.7}{Implementation Details}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.8}{Threats to Validity}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.9}{Discussion}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{Learning: IRIS Classification}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Setup}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.2}{Models and Training Details}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.3}{Confusion Matrices \(2 features\)}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.4}{Confusion Matrices \(4 features\)}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.5}{Quantitative Results}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.6}{NN Topology and Discussion}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.7}{NN Topology Sweep}{section.3}% 19
