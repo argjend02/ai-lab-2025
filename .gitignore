@@ -1,23 +1,27 @@
-# Python
+# --- Python ---
 __pycache__/
 *.py[cod]
 *.egg-info/
 *.log
 
-# Virtual envs
+# Virtual environments
 .venv/
 venv/
 env/
 
-# OS/IDE
+# IDE / OS
 .DS_Store
 .vscode/
 .idea/
 
-# Results (keep tables/logs, ignore heavy images)
+# Build artifacts
+dist/
+build/
+
+# Generated results (keep tables/logs; ignore heavy images)
 results/figures/
 
-# LaTeX build artifacts (keep the PDF if you want; we do)
+# LaTeX aux (keep the final PDF)
 report/*.aux
 report/*.log
 report/*.out
@@ -25,3 +29,6 @@ report/*.toc
 report/*.synctex.gz
 report/*.fls
 report/*.fdb_latexmk
+
+# Byte-compiled cache anywhere
+**/__pycache__/
